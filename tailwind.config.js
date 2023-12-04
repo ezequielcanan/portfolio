@@ -11,10 +11,11 @@ export default {
         secondary: "#0cff99",
         third: "#202020",
         fourth: "#ffffff",
+        fifth: "#0ff",
         nav: "#828282"
       },
       screens: {
-        xs: "400px"
+        xs: "410px"
       },
       keyframes: {
         carousel: {

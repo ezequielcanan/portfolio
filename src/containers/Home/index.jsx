@@ -1,14 +1,15 @@
 import Presentation from "../../components/Presentation"
 import Carousel from "../../components/Carousel"
+import Section from "../../components/Section";
+import { GoArrowDown } from "react-icons/go"
 
-const Home = () => {
+const Home = ({scrollRef}) => {
   return (
-    <main className="w-full py-[100px] md:py-0 bg-[url('./background.jpg')] bg-third/80 bg-left-top bg-cover bg-no-repeat bg-blend-multiply">
-      <section className="h-screen grid items-center justify-items-center md:grid-cols-2 md:pl-[150px]">
-        <Presentation/>
-        <Carousel/>
-      </section>
-    </main>
+    <Section id={"home"} className={"grid items-center justify-items-center md:grid-cols-2 bg-[url('./background.webp')] bg-third/80 bg-left-top bg-cover bg-no-repeat bg-blend-multiply"}>
+      <Presentation />
+      <Carousel />
+      <GoArrowDown className="absolute bottom-[5%] animate-bounce left-1/2 text-secondary text-5xl bg-[#000] rounded-full p-3 cursor-pointer" onClick={() => document.getElementById("about").scrollIntoView()}/>
+    </Section>
   )
 }
 
