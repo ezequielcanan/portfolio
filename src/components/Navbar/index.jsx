@@ -26,7 +26,7 @@ const Navbar = () => {
   ]
   const handleNavClick = () => setNav(!nav)
   return (
-    <header className="w-full h-[100px] bg-[#000]/80 z-20 flex fixed md:flex-col md:top-0 md:left-0 md:justify-center md:w-[120px] md:h-full">
+    <header className="w-full h-[100px] bg-[#000]/90 z-20 flex fixed md:flex-col md:top-0 md:left-0 md:justify-center md:w-[120px] md:h-full">
       <nav className="h-full w-full flex items-center px-5 md:px-auto md:flex-col justify-between">
         <HashLink to={"/#home"} className="w-[100px] md:h-auto" onClick={() => nav && setNav(false)}>
           <img src={logo} alt="" className="" />
