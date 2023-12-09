@@ -7,11 +7,11 @@ const NavLi = ({text, url, nav, type}) => {
   return (
     <li className="w-4/5 text-2xl font-bold text-center md:py-auto md:w-auto md:rotate-90">
       {type === "hash" ? (
-        <HashLink to={url} className={notActiveClass} onClick={() => window.innerWidth < 768 && nav(false)}>
+        <HashLink to={url} className={notActiveClass} onClick={() => window.innerWidth < 768 && nav(false)} aria-label={"Go to "+url+" section"}>
           {text}
         </HashLink>
       ) : (
-        <Link to={url} className={notActiveClass} onClick={() => window.innerWidth < 768 && nav(false)}>
+        <Link to={url} className={notActiveClass} onClick={() => window.innerWidth < 768 && nav(false)} aria-label={"Go to "+url}>
           {text}
         </Link>
       )}

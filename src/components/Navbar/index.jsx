@@ -28,8 +28,8 @@ const Navbar = () => {
   return (
     <header className="w-full h-[100px] bg-[#000]/90 z-20 flex fixed md:flex-col md:top-0 md:left-0 md:justify-center md:w-[120px] md:h-full">
       <nav className="h-full w-full flex items-center px-5 md:px-auto md:flex-col justify-between">
-        <HashLink to={"/#home"} className="w-[100px] md:h-auto" onClick={() => nav && setNav(false)}>
-          <img src={logo} alt="" className="" />
+        <HashLink to={"/#home"} className="w-[100px] md:h-auto" onClick={() => nav && setNav(false)} aria-label="Go to home section">
+          <img src={logo} alt={logo} className="h-[100px] w-[100px]" />
         </HashLink>
         <ul className="hidden text-[#0ff] h-full md:flex md:flex-col justify-evenly">
           {sections.map(({ url, text, type }) => {

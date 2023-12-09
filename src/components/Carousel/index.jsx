@@ -14,7 +14,7 @@ const Carousel = () => {
       {slides.map((s,i) => {
         return <div key={s} className="inline-block animate-[carousel_20s_infinite_linear] shrink-0 flex">
           {images.map(img => {
-            return <img src={img} key={img} className="h-[120px] mx-[70px] lg:mx-[150px]"/>
+            return <img src={img} key={img} className="h-[120px] mx-[70px] lg:mx-[150px] w-[120px]" alt={img}/>
           })}
         </div>
       })}
