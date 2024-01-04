@@ -1,5 +1,5 @@
 # React Portfolio
-![image info](./src/assets/images/darklogo.webp)
+![image info](./src/assets/images/readme.png)
 
 ## Technologies
 
