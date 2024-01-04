@@ -4,7 +4,7 @@ import Section from "../../components/Section"
 import Toastify from "toastify-js"
 import "toastify-js/src/toastify.css"
 import { useRef } from "react"
-import { AiFillInstagram, AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai"
+import { AiFillInstagram, AiFillGithub, AiOutlineWhatsApp, AiFillLinkedin } from "react-icons/ai"
 
 const Contact = () => {
   const {register, handleSubmit, formState: {errors}, reset} = useForm()
@@ -57,9 +57,18 @@ const Contact = () => {
         <div className="flex flex-col items-center gap-y-[40px]">
           <h2 className="text-secondary text-5xl">Get in touch!</h2>
           <div className="flex w-full justify-between">
-            <AiFillInstagram className="text-5xl text-secondary"/>
-            <AiFillGithub className="text-5xl text-secondary"/>
-            <AiOutlineWhatsApp className="text-5xl text-secondary"/>
+            <a target="_blank" href="https://www.instagram.com/ezequiel.canan?igsh=bml2ZXcweHRrZmg3">
+              <AiFillInstagram className="text-5xl text-secondary"/>
+            </a>
+            <a target="_blank" href="https://github.com/ezequielcanan">
+              <AiFillGithub className="text-5xl text-secondary"/>
+            </a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=541126505361">
+              <AiOutlineWhatsApp className="text-5xl text-secondary"/>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/ezequiel-canan-704936256/">
+              <AiFillLinkedin className="text-5xl text-secondary"/>
+            </a>
           </div>
         </div>
         <form className="bg-[#111] p-[40px] rounded-md w-full max-w-lg" onSubmit={formSubmit} ref={form}>
